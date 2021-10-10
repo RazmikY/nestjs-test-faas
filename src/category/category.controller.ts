@@ -14,7 +14,7 @@ export class CategoryController {
     }
 
     @Post()
-    public modifyData(@Body() category: CategoryDto): Observable<any> {
+    public modifyData(@Body() category: CategoryDto): Observable<CategoryDto> {
         return this.categoryService.modifyData(category);
     }
 }
